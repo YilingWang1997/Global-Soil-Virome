@@ -1,2 +1,2 @@
 # Global-Soil-Virome
-Supporting code for manuscript: "Ecological/environmental drivers of global soil virome diversity"
+Supporting code for manuscript: "Biogeographic patterns and drivers of soil viromes"
