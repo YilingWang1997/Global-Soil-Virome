@@ -26,8 +26,7 @@ spearman_res_ori <- NULL
 for (i in c(2:21)){
 col <- colnames(meta)[i]
 print(col)
-#slm <- lagsarlm(shannon_species ~ get0(col),data=meta,listw=w)
-slm <- errorsarlm(shannon_species ~ get0(col),data=meta,listw=w)
+slm <- lagsarlm(shannon_species ~ get0(col),data=meta,listw=w)
 summary(slm)
 spearman_res <- cor.test(resid(slm), meta[!is.na(meta[,i]),i], method="spearman")
 print(spearman_res)
